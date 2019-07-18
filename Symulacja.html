@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Symulacja Pożaru </title>
+</head>
+<body>
+
+<canvas id="canvas" width="500" height="500"> </canvas>
+
+<div class="slidecontainer">
+<p style="font-size:40px;">Pozcyja ognia losuje się po restarcie.</p>  
+<p style="font-size:40px;">Ustaw obszary (%).</p>  
+<p style="font-size:40px;">Skały: <span id="ska_pro"></span></p>  
+<input type="range" min="1" max="100" value="10" class="slider" id="s2">
+<p style="font-size:40px;">Woda: <span id="wod_pro"></span></p>  
+<input type="range" min="1" max="100" value="10" class="slider" id="s3">
+</div>
+
+<div class="buttonconatiner">
+<button class="button" id="button1" onclick="start('Restart')">Restart</button>  
+<button class="button" id="button2"  onclick="start('Start')">Start</button>  
+<button class="button" id="button3"  onclick="start('Stop')">Stop</button>  
+</div>
+
+<h1> Wykonał: Karol Żurek </h1>
+
+<table>
+        <tr>
+            <th>Dane:</th>
+        </tr>
+        <tr>
+            <th>Woda:</th>
+        </tr>
+        <tr>
+            <td><p id="woda"></p></td>
+        </tr>
+        
+        <tr>
+            <th>Las:</th>
+        </tr>
+        <tr>
+            <td><p id="las"></p></td>
+        </tr>
+
+        <tr>
+            <th>Skały:</th>
+        </tr>
+        <tr>
+            <td><p id="skaly"></p></td>
+        </tr>
+
+        <tr>
+            <th>Ogień:</th>
+        </tr>
+        <tr>
+            <td><p id="ogien"></p></td>
+        </tr>
+
+        <tr>
+            <th>Wypalenie:</th>
+        </tr>
+        <tr>
+            <td><p id="wypa"></p></td>
+        </tr>
+        <tr>
+        <th>Wiatr:</th>
+        </tr>
+        <tr>
+            <td><p id="wiatr"></p></td>
+        </tr>
+            
+</table>
+
+<script src="Script_Pozar.js"> </script>
+<link rel="stylesheet" href="main.css">
+
+
+</body>
+</html>
